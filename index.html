@@ -38,7 +38,7 @@
 
 <!-- style="overflow-y: hidden;" -->
 
-<body style="overflow-y: hidden;" >
+<body style="overflow-y: hidden;" class="bg_black" >
 
 
 
@@ -51,7 +51,7 @@
 
 
 
-    <div class="content bgTotal">
+    <div class="content">
 
 
 
@@ -62,17 +62,21 @@
 
 
 
+
+
+
             <div class="pst_relative w_100">
-                <img class="w_100 no_touch " src="total2.webp">
+                <img class="w_100 no_touch " src="total.webp">
             </div>
-
-
-
+            
+            
+            
+            <div class="pst_absolute w_100 hpx_150" style="top: 18.5%; " id="play"></div>
             
 
 
 
-            <div class="pst_absolute w_100" style="top: 45%">
+            <div class="pst_absolute w_100" style="top: 40.5%">
                 <center>
                     <div class="text-center m_0">
                         <div id="countdown" class="color_white fspx_20 font_lo"></div>
@@ -83,28 +87,41 @@
             
     
 
+            <a class="pst_absolute w_100 hpx_150 d_block" style=" bottom: 34%; "
+            href="https://maps.app.goo.gl/GCzW6JtVPWhXL4Y8A" target="_blank"></a>
 
             
-            <div class="pst_absolute w_100" style="height: 150px; bottom: 28%;">
+
+    
+
+            <a class="pst_absolute w_100 hpx_150 d_block" style=" bottom: 25%; "
+            href="https://maps.app.goo.gl/EDink5PYwToy6NkX7" target="_blank"></a>
+
+            
+    
+
+            <a class="pst_absolute w_100 hpx_150 d_block" style=" bottom: 18.5%; "
+            href="https://api.whatsapp.com/send?phone=+5215617844777&text=Hola,%20confirmo%20mi%20asistencia%20a%20tu%20evento" target="_blank"></a>
+
+            
+
+
+
+            <!--<div class="pst_absolute w_100" style="height: 150px; bottom: 28%;">
                 <center class="h_100" style="display: flex;">
                     <a class="w_50 h_100 d_block" href="https://maps.app.goo.gl/fjEwMsP4qpcXa4Ui8" target="_blank"></a>
                     <a class="w_50 h_100 d_block" href="https://maps.app.goo.gl/zSe7PfYYWhS45rLZ8" target="_blank"></a>
                </center>
-            </div>
+            </div>-->
 
 
-            <a class="pst_absolute w_100 hpx_150 d_block" style=" bottom: 3%;"
-            href="https://api.whatsapp.com/send?phone=XXXXXX&text=Hola,%20confirmo%20mi%20asistencia%20a%20tu%20evento" target="_blank"></a>
-
-            
 
     
         
 
   
         <footer class="bd-footer">
-            <br>
-            <br>
+       
             <div class="container-fluid">
                 <div class="row align-items-center py-4 ">
     
@@ -372,7 +389,7 @@ const swiper = new Swiper('.swiper', {
 
 document.getElementById("sello").addEventListener("click", function() {
 
-    //audio.play();
+    audio.play();
 
     $('body').css('overflow-y', 'auto');
     document.querySelector(".protector").style.display = "none";
@@ -380,9 +397,9 @@ document.getElementById("sello").addEventListener("click", function() {
     $('#sound').find('img').attr('src', 'sound.svg');
     muted = !muted;
 
-    //$(window).scrollTop(0);
+    $(window).scrollTop(0);
 });
-//$(window).scrollTop(0);
+$(window).scrollTop(0);
 
 
 
